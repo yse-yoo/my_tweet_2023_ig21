@@ -10,9 +10,6 @@ if (isset($_SESSION['errors'])) {
     $errors = $_SESSION['errors'];
 }
 
-$genders['male'] = "男性";
-$genders['female'] = "女性";
-
 function checked($value, $checkValue)
 {
     return ($value == $checkValue) ? 'checked' : '';
@@ -22,7 +19,6 @@ function selected($value, $checkValue)
 {
     return ($value == $checkValue) ? 'selected' : '';
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

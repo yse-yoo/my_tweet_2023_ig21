@@ -81,25 +81,19 @@ function check($posts)
         <p>この内容で登録してもよろしいですか？</p>
         <div>
             <form action="store.php" method="post">
-                <div>
-                    <label for="">氏名</label>
+                <div class="mb-3">
+                    <label class="form-label" for="">氏名</label>
                     <?= $regist['name'] ?>
                 </div>
-                <div>
-                    <label for="">Email</label>
+                <div class="mb-3">
+                    <label class="form-label" for="">Email</label>
                     <?= $regist['email'] ?>
                 </div>
-                <div>
-                    <label for="">生年月日</label>
-                    <?= $regist['year'] ?>/<?= $regist['month'] ?>/<?= $regist['day'] ?>
-                </div>
-                <div>
-                    <label for="">性別</label>
-                    <?= $genders[$regist['gender']] ?>
-                </div>
-                <button class="btn btn-primary">登録</button>
 
-                <a class="btn btn-outline-primary" href="input.php">戻る</a>
+                <div class="mb-3">
+                    <button class="w-100 mb-2 btn btn-primary">登録</button>
+                    <a class="w-100 btn btn-outline-primary" href="input.php">戻る</a>
+                </div>
             </form>
         </div>
     </div>
