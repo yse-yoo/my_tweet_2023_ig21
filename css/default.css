@@ -1,0 +1,62 @@
+a {
+    text-decoration: none;
+}
+
+#side-menu {
+    border-right: 1px solid #e0e0e0;
+}
+
+#side-menu ul {
+    list-style: none;
+}
+
+#side-menu li {
+    padding: 8px 0;
+}
+
+#side-menu li > img {
+    width: 30px;
+}
+
+#side-menu a {
+    color: #303030;
+}
+
+.tweet {
+    padding: 20px 10px 0 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.profile-image {
+    padding: 0 5px;
+}
+
+.profile-image img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.tweet-body {
+    padding: 5px;
+}
+
+.tweet-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tweet-nav li {
+    width: 100px;
+}
+
+.tweet-nav img {
+    width: 14px;
+    height: 14px;
+}
+
+#sub-contents .icon {
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+}
