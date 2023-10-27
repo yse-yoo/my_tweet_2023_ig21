@@ -13,7 +13,7 @@
           <a class="nav-link" href="../regist/input.php">会員登録</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ログイン</a>
+          <a class="nav-link" href="../login/">ログイン</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
