@@ -18,7 +18,7 @@ session_regenerate_id(true);
             登録ありがとうございました。
         </p>
         <div class="mt-3">
-            <a class="w-100 btn btn-outline-primary" href="login/">ログイン</a>
+            <a class="w-100 btn btn-outline-primary" href="../login/">ログイン</a>
         </div>
     </div>
 </body>
