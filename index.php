@@ -3,7 +3,7 @@
 session_start();
 session_regenerate_id(true);
 
-// ログインユーザチェック
+// ログインユーザチェック（セッションに保存されているユーザを取得）
 $auth_user = $_SESSION['auth_user'];
 if (empty($auth_user)) {
     //ユーザがいなかったらログイン画面にリダイレクト
