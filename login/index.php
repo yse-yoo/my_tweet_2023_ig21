@@ -1,5 +1,7 @@
 <?php
+require_once('../app.php');
 //TODO: セッション削除
+
 
 // 入力画面にリダイレクト
 header('Location: ./input.php');

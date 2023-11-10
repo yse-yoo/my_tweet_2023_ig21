@@ -1,7 +1,5 @@
 <?php
-//セッション開始
-session_start();
-session_regenerate_id(true);
+require_once('../app.php');
 
 //セッションにユーザがあれば消す
 if (!empty($_SESSION['auth_user'])) {

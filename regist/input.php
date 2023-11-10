@@ -1,7 +1,5 @@
 <?php
-// セッションスタート
-session_start();
-session_regenerate_id(true);
+require_once('../app.php');
 
 if (isset($_SESSION['regist'])) {
     $regist = $_SESSION['regist'];

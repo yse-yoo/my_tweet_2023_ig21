@@ -1,7 +1,5 @@
 <?php
-//TODO：セッションチェック
-session_start();
-session_regenerate_id(true);
+require_once('../app.php');
 
 ?>
 <!DOCTYPE html>

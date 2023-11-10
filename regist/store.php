@@ -1,26 +1,23 @@
 <?php
-// セッションスタート
-session_start();
-session_regenerate_id(true);
+require_once('../app.php');
 
-//セッションからデータ取得
-$regist = $_SESSION['regist'];
+// POSTリクエスト以外は処理しない
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    exit('can not get access');
+}
 
-//TODO: データチェック
-//TODO: SQLを作成して
-//TODO: データベースに保存
-// $sql = "INSERT INTO (name, email, ....) VLAUES($name, $emaile, $password)";
-// $xxxx->query($sql);
-$isSuccess = true;
+// セッションから入力されたデータを取得
+$post = $_SESSION['regist'];
 
-// セッション削除
-unset($_SESSION['regist']);
 
-//結果画面にリダイレクト（URL転送）
-if ($isSuccess) {
-    //成功したら 完了画面
+// MySQLに保存(SQL INSERT)
+$user = new User();
+if ($user->insert($post)) {
+    //成功
+    // 完了画面にリダイレクト
     header('Location: result.php');
 } else {
-    //失敗したら 入力画面
+    //失敗
+    // 入力画面にリダイレクト
     header('Location: input.php');
 }

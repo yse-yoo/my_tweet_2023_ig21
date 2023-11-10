@@ -19,9 +19,6 @@ if (isset($_SESSION['errors'])) {
 // セッション保存
 $_SESSION['regist'] = $regist;
 
-$genders['male'] = "男性";
-$genders['female'] = "女性";
-
 /**
  * バリデート（validate）
  */

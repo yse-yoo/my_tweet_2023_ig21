@@ -1,7 +1,5 @@
 <?php
-//セッション開始
-session_start();
-session_regenerate_id(true);
+require_once('app.php');
 
 // ログインユーザチェック（セッションに保存されているユーザを取得）
 $auth_user = $_SESSION['auth_user'];
